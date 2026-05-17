@@ -43,9 +43,10 @@ def cadastrar_medicamento(nome, horario, dosagem, cep=None):
         else:
             raise ValueError("CEP inválido ou não encontrado.")
 
-    return {
+    resultado = {
         "nome": nome,
         "horario": horario,
         "dosagem": dosagem,
         "local_retirada": endereco
     }
+    return resultado
